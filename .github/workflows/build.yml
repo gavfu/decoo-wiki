@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         with:
-          token: ${{ secrets.SEC_IN_PAT }}
+          token: ${{ secrets.DECOO_PAT }}
 
       - name: install and build
         run: |
@@ -21,7 +21,7 @@ jobs:
       - name: Deploy
         uses: hpcodecraft/action-deploy-workspace-to-repo@v2.2
         env:
-          GITHUB_ACCESS_TOKEN: ${{ secrets.SEC_IN_PAT }}
+          GITHUB_ACCESS_TOKEN: ${{ secrets.DECOO_PAT }}
           SRC_FOLDER: build
           DEST_OWNER: decooio
           DEST_REPO: decoo-wiki-deploy
