@@ -1,18 +1,18 @@
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
-  "url": "https://your-docusaurus-test-site.com",
+  "title": "Decoo Wiki",
+  "tagline": "Decoo = DECentralized clOud stOrage",
+  "url": "https://wiki.decoo.io",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "organizationName": "decooio",
+  "projectName": "decoo-wiki",
   "themeConfig": {
     "navbar": {
-      "title": "My Site",
+      "title": "Decoo",
       "logo": {
-        "alt": "My Site Logo",
+        "alt": "Decoo Logo",
         "src": "img/logo.svg"
       },
       "items": [
@@ -27,11 +27,6 @@ export default {
           "to": "/blog",
           "label": "Blog",
           "position": "left"
-        },
-        {
-          "href": "https://github.com/facebook/docusaurus",
-          "label": "GitHub",
-          "position": "right"
         }
       ],
       "hideOnScroll": false
@@ -52,16 +47,16 @@ export default {
           "title": "Community",
           "items": [
             {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
+              "label": "Twitter",
+              "href": "https://twitter.com/docusaurus"
             },
             {
               "label": "Discord",
               "href": "https://discordapp.com/invite/docusaurus"
             },
             {
-              "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
+              "label": "Stack Overflow",
+              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
             }
           ]
         },
@@ -79,7 +74,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2021 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2021 Decoo Technologies Co.,Ltd"
     },
     "colorMode": {
       "defaultMode": "light",
@@ -106,15 +101,15 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/lf/decoo/decoo-wiki/sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/"
+          "sidebarPath": "/Users/gavfu/github/decooio/decoo-wiki/sidebars.js",
+          "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/"
         },
         "blog": {
           "showReadingTime": true,
-          "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/"
+          "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/"
         },
         "theme": {
-          "customCss": "/Users/lf/decoo/decoo-wiki/src/css/custom.css"
+          "customCss": "/Users/gavfu/github/decooio/decoo-wiki/src/css/custom.css"
         }
       }
     ]
