@@ -1,6 +1,6 @@
 export default {
   "title": "Decoo Wiki",
-  "tagline": "Decoo = DECentralized clOud stOrage",
+  "tagline": "Decoo = Decentralized cloud storage",
   "url": "https://wiki.decoo.io",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
@@ -10,75 +10,17 @@ export default {
   "projectName": "decoo-wiki",
   "themeConfig": {
     "navbar": {
-      "title": "Decoo",
+      "title": "wiki",
       "logo": {
         "alt": "Decoo Logo",
         "src": "img/logo.svg"
       },
-      "items": [
-        {
-          "type": "doc",
-          "docId": "intro",
-          "position": "left",
-          "label": "Tutorial",
-          "activeSidebarClassName": "navbar__link--active"
-        },
-        {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
-        }
-      ],
-      "hideOnScroll": false
-    },
-    "footer": {
-      "style": "dark",
-      "links": [
-        {
-          "title": "Docs",
-          "items": [
-            {
-              "label": "Tutorial",
-              "to": "/docs/intro"
-            }
-          ]
-        },
-        {
-          "title": "Community",
-          "items": [
-            {
-              "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
-            },
-            {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
-            }
-          ]
-        },
-        {
-          "title": "More",
-          "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
-              "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
-            }
-          ]
-        }
-      ],
-      "copyright": "Copyright © 2021 Decoo Technologies Co.,Ltd"
+      "hideOnScroll": false,
+      "items": []
     },
     "colorMode": {
       "defaultMode": "light",
-      "disableSwitch": false,
+      "disableSwitch": true,
       "respectPrefersColorScheme": false,
       "switchConfig": {
         "darkIcon": "🌜",
@@ -101,7 +43,8 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/gavfu/github/decooio/decoo-wiki/sidebars.js",
+          "sidebarPath": "/Users/eericxu/work/decoo-wiki/sidebars.js",
+          "routeBasePath": "/",
           "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/"
         },
         "blog": {
@@ -109,7 +52,7 @@ export default {
           "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/"
         },
         "theme": {
-          "customCss": "/Users/gavfu/github/decooio/decoo-wiki/src/css/custom.css"
+          "customCss": "/Users/eericxu/work/decoo-wiki/src/css/custom.css"
         }
       }
     ]
