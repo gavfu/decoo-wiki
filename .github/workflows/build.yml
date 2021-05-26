@@ -17,12 +17,13 @@ jobs:
         run: |
           yarn install
           yarn build
+          ls -l build
 
       - name: upload to ipfs use crust
         id: upload
         uses: crustio/ipfs-upload-action@v1.0.2
         with:
-          path: './build'
+          path: 'build'
           crust-secret-key: ${{ secrets.CRUST_SECRET_KEY }}
 
       - name: pin to crust
