@@ -33,7 +33,7 @@ jobs:
           seeds: ${{ secrets.CRUST_SEEDS }}
 
       - name: update dnslink
-        uses: XueMoMo/actions-coudflare-dns@v1.0.0
+        uses: XueMoMo/actions-coudflare-dns@v1.0.1
         id: dnslink
         with:
           name: "wiki.decoo.io"
