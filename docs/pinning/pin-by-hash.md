@@ -1,0 +1,53 @@
+---
+title: ''
+---
+
+## Endpoint
+https://api.decoo.io/pinning/pinByHash
+
+## Description
+Asynchronously pin an IPFS content to Decoo cloud by its content identifier. Each API call will generate a *pin job*, which will be picked and processed by a periodically running job. You can query the status of the job using [pinJobs](pinning/pin-jobs.md) API.
+
+Please not that, in order for the job to be successfully processed, the content for the hash you provide must already be pinned by another node on the IPFS network.
+
+## Type
+POST
+
+## Headers
+```
+"Authorization": "Bearer <YOUR_API_KEY>"
+```
+
+## Body
+
+The basic request body should be like:
+```json
+{
+  "hashToPin": "<Hash value of the content to pin>"
+}
+```
+
+Optionally, some metadata could be attached:
+```json
+"decooMetadata": {
+  "name": "<A custom name of the content>"
+}
+```
+
+## Response
+```json
+{
+  "HashToPin": "<This is the hash provided to Decoo to pin>",
+  "JobId": "<This is the id of the generated pin job>",
+  "JobStatus": "<Current status of the pin job.  If the request was successful, the status should be 'queued'>"
+}
+```
+
+## Curl Example
+```sh
+curl -X POST "https://api.decoo.io/pinning/pinByHash" \
+  -H "Authorization: Bearer <YOUR_API_KEY>" \
+  -H "Content-Type: application/json" \
+  -F file=<YOUR_FILE>
+  --data '{"hashToPin": "<HASH_TO_PIN>", "decooMetadata": {"name": "My File"}}'
+```

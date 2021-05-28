@@ -1,0 +1,84 @@
+---
+title: ''
+---
+
+## Endpoint
+https://api.decoo.io/pinning/pinFile
+
+## Description
+Upload and pin a file to Decoo's Ipfs nodes, which will also eventually be stored to Crust network.
+
+## Type
+POST
+
+## Headers
+```
+"Authorization": "Bearer <YOUR_API_KEY>"
+```
+
+## Body
+The body of this request needs to take the form of a multipart/form-data with the following key / values:
+
+**file**<br/>
+The first key in the form-data body should be named "file", and the value should be the file you're attempting to upload to Decoo.
+
+**decooOptions (Optional)**
+
+You can pass some additional options to control how your content is pinned to Decoo.
+
+- *cidVersion*: The IPFS CID version used when creating a hash for your content. Valid options are:
+  - *"0"*: CID v0
+  - *"1"*: CID v1
+
+  The default value is *"0"*.
+
+- *wrapWithDirectory*: Whether to wrap your content inside of a directory when adding to IPFS. This allows users to retrieve content via a filename instead of a hash. Valid options are:
+  - *true*
+  - *false*
+
+  The default value is *false*.
+
+An example *decooOptions* is like below:
+```json
+"decooOptions": {
+  "cidVersion": "0",
+  "wrapWithDirectory": true
+}
+```
+
+  
+**decooMetadata (Optional)**
+
+You can also include some metadata when pinning content to Decoo cloud. The metadata can later be used for easy querying on what you've pinned with [pinList](pinning/pin-list.md) request.
+
+*decooMetadata* takes following form:
+```json
+{
+  "name": "<A custom name. If not provided, the original name of the content (if feasible) will be used.>"
+}
+```
+
+An example *decooMetadata* is like below:
+```json
+"decooOptions": {
+  "name": "My File"
+}
+```
+
+## Response
+```json
+{
+  "PinHash": "<This is the Ipfs multi-hash provided back for your file>",
+  "PinSize": "<This is the size (in bytes) of the pinned content>",
+  "PinDate": "<This is the timestamp for your content pinning (represented in ISO 8601 format)>"
+}
+```
+
+## Curl Example
+```sh
+curl -X POST "https://api.decoo.io/pinning/pinFile" \
+  -H "Authorization: Bearer <YOUR_API_KEY>" \
+  -H "Content-Type: multipart/form-data" \
+  -F file=<YOUR_FILE>
+  --data '{"decooOptions": {"cidVersion": 0, "wrapWithDirectory": true}, "decooMetadata": {"name": "My File"}}'
+```

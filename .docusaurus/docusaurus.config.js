@@ -43,7 +43,7 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/eericxu/work/decoo-wiki/sidebars.js",
+          "sidebarPath": "/Users/gavfu/github/decooio/decoo-wiki/sidebars.js",
           "routeBasePath": "/",
           "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/"
         },
@@ -52,7 +52,7 @@ export default {
           "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/"
         },
         "theme": {
-          "customCss": "/Users/eericxu/work/decoo-wiki/src/css/custom.css"
+          "customCss": "/Users/gavfu/github/decooio/decoo-wiki/src/css/custom.css"
         }
       }
     ]

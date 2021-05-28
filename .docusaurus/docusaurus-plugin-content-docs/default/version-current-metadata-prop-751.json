@@ -4,21 +4,77 @@
   "label": "Next",
   "isLast": true,
   "docsSidebars": {
-    "tutorialSidebar": [
+    "mySidebar": [
       {
         "type": "link",
-        "label": "Tutorial Intro",
+        "label": "Introduction",
         "href": "/"
       },
       {
+        "collapsed": false,
+        "type": "category",
+        "label": "General",
+        "items": [
+          {
+            "type": "link",
+            "label": "Getting Started",
+            "href": "/general/getting-started"
+          },
+          {
+            "type": "link",
+            "label": "API Keys",
+            "href": "/general/api-keys"
+          },
+          {
+            "type": "link",
+            "label": "FAQ",
+            "href": "/general/faq"
+          }
+        ]
+      },
+      {
+        "collapsed": false,
+        "type": "category",
+        "label": "Pinning API",
+        "items": [
+          {
+            "type": "link",
+            "label": "pinFile",
+            "href": "/pinning/pin-file"
+          },
+          {
+            "type": "link",
+            "label": "pinByHash",
+            "href": "/pinning/pin-by-hash"
+          },
+          {
+            "type": "link",
+            "label": "pinJobs",
+            "href": "/pinning/pin-jobs"
+          },
+          {
+            "type": "link",
+            "label": "pinList",
+            "href": "/pinning/pin-list"
+          }
+        ]
+      },
+      {
         "type": "link",
-        "label": "MDX Simple",
-        "href": "/markdown-features"
+        "label": "Pinning Services API",
+        "href": "/pinning-services-api"
       }
     ]
   },
   "permalinkToSidebar": {
-    "/": "tutorialSidebar",
-    "/markdown-features": "tutorialSidebar"
+    "/general/api-keys": "mySidebar",
+    "/general/faq": "mySidebar",
+    "/general/getting-started": "mySidebar",
+    "/": "mySidebar",
+    "/pinning-services-api": "mySidebar",
+    "/pinning/pin-by-hash": "mySidebar",
+    "/pinning/pin-file": "mySidebar",
+    "/pinning/pin-jobs": "mySidebar",
+    "/pinning/pin-list": "mySidebar"
   }
 }

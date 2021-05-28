@@ -8,17 +8,56 @@
           "label": "Next",
           "isLast": true,
           "path": "/",
-          "mainDocId": "intro",
+          "mainDocId": "introduction",
           "docs": [
             {
-              "id": "intro",
+              "id": "general/api-keys",
+              "path": "/general/api-keys",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "general/faq",
+              "path": "/general/faq",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "general/getting-started",
+              "path": "/general/getting-started",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "introduction",
               "path": "/",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "mySidebar"
             },
             {
               "id": "markdown-features",
-              "path": "/markdown-features",
-              "sidebar": "tutorialSidebar"
+              "path": "/markdown-features"
+            },
+            {
+              "id": "pinning-services-api",
+              "path": "/pinning-services-api",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "pinning/pin-by-hash",
+              "path": "/pinning/pin-by-hash",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "pinning/pin-file",
+              "path": "/pinning/pin-file",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "pinning/pin-jobs",
+              "path": "/pinning/pin-jobs",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "pinning/pin-list",
+              "path": "/pinning/pin-list",
+              "sidebar": "mySidebar"
             }
           ]
         }

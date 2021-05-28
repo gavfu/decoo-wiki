@@ -10,48 +10,180 @@
           "versionEditUrlLocalized": "https://github.com/decooio/decoo-wiki/edit/main/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/eericxu/work/decoo-wiki/sidebars.js",
-          "contentPath": "/Users/eericxu/work/decoo-wiki/docs",
-          "contentPathLocalized": "/Users/eericxu/work/decoo-wiki/i18n/en/docusaurus-plugin-content-docs/current",
-          "mainDocId": "intro",
+          "sidebarFilePath": "/Users/gavfu/github/decooio/decoo-wiki/sidebars.js",
+          "contentPath": "/Users/gavfu/github/decooio/decoo-wiki/docs",
+          "contentPathLocalized": "/Users/gavfu/github/decooio/decoo-wiki/i18n/en/docusaurus-plugin-content-docs/current",
+          "mainDocId": "introduction",
           "sidebars": {
-            "tutorialSidebar": [
+            "mySidebar": [
               {
                 "type": "doc",
-                "id": "intro"
+                "id": "introduction",
+                "label": "Introduction"
+              },
+              {
+                "collapsed": false,
+                "type": "category",
+                "label": "General",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "general/getting-started",
+                    "label": "Getting Started"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "general/api-keys",
+                    "label": "API Keys"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "general/faq",
+                    "label": "FAQ"
+                  }
+                ]
+              },
+              {
+                "collapsed": false,
+                "type": "category",
+                "label": "Pinning API",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "pinning/pin-file",
+                    "label": "pinFile"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "pinning/pin-by-hash",
+                    "label": "pinByHash"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "pinning/pin-jobs",
+                    "label": "pinJobs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "pinning/pin-list",
+                    "label": "pinList"
+                  }
+                ]
               },
               {
                 "type": "doc",
-                "id": "markdown-features"
+                "id": "pinning-services-api",
+                "label": "Pinning Services API"
               }
             ]
           },
           "permalinkToSidebar": {
-            "/": "tutorialSidebar",
-            "/markdown-features": "tutorialSidebar"
+            "/general/api-keys": "mySidebar",
+            "/general/faq": "mySidebar",
+            "/general/getting-started": "mySidebar",
+            "/": "mySidebar",
+            "/pinning-services-api": "mySidebar",
+            "/pinning/pin-by-hash": "mySidebar",
+            "/pinning/pin-file": "mySidebar",
+            "/pinning/pin-jobs": "mySidebar",
+            "/pinning/pin-list": "mySidebar"
           },
           "docs": [
             {
-              "unversionedId": "intro",
-              "id": "intro",
+              "unversionedId": "general/api-keys",
+              "id": "general/api-keys",
               "isDocsHomePage": false,
-              "title": "Tutorial Intro",
-              "description": "Let's discover Docusaurus in less than 5 minutes.",
-              "source": "@site/docs/intro.md",
+              "title": "",
+              "description": "API Keys",
+              "source": "@site/docs/general/api-keys.md",
+              "sourceDirName": "general",
+              "slug": "/general/api-keys",
+              "permalink": "/general/api-keys",
+              "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/docs/general/api-keys.md",
+              "version": "current",
+              "frontMatter": {
+                "title": ""
+              },
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "",
+                "permalink": "/general/getting-started"
+              },
+              "next": {
+                "title": "",
+                "permalink": "/general/faq"
+              }
+            },
+            {
+              "unversionedId": "general/faq",
+              "id": "general/faq",
+              "isDocsHomePage": false,
+              "title": "",
+              "description": "Q: What is IPFS Pinning Service?",
+              "source": "@site/docs/general/faq.md",
+              "sourceDirName": "general",
+              "slug": "/general/faq",
+              "permalink": "/general/faq",
+              "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/docs/general/faq.md",
+              "version": "current",
+              "frontMatter": {
+                "title": ""
+              },
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "",
+                "permalink": "/general/api-keys"
+              },
+              "next": {
+                "title": "",
+                "permalink": "/pinning/pin-file"
+              }
+            },
+            {
+              "unversionedId": "general/getting-started",
+              "id": "general/getting-started",
+              "isDocsHomePage": false,
+              "title": "",
+              "description": "About Decoo",
+              "source": "@site/docs/general/getting-started.md",
+              "sourceDirName": "general",
+              "slug": "/general/getting-started",
+              "permalink": "/general/getting-started",
+              "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/docs/general/getting-started.md",
+              "version": "current",
+              "frontMatter": {
+                "title": ""
+              },
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "",
+                "permalink": "/"
+              },
+              "next": {
+                "title": "",
+                "permalink": "/general/api-keys"
+              }
+            },
+            {
+              "unversionedId": "introduction",
+              "id": "introduction",
+              "isDocsHomePage": false,
+              "title": "",
+              "description": "Decoo, the Entrance to Web 3.0",
+              "source": "@site/docs/introduction.md",
               "sourceDirName": ".",
               "slug": "/",
               "permalink": "/",
-              "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/docs/intro.md",
+              "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/docs/introduction.md",
               "version": "current",
-              "sidebarPosition": 1,
               "frontMatter": {
-                "sidebar_position": 1,
+                "title": "",
                 "slug": "/"
               },
-              "sidebar": "tutorialSidebar",
+              "sidebar": "mySidebar",
               "next": {
-                "title": "MDX Simple",
-                "permalink": "/markdown-features"
+                "title": "",
+                "permalink": "/general/getting-started"
               }
             },
             {
@@ -69,11 +201,127 @@
               "sidebarPosition": 4,
               "frontMatter": {
                 "sidebar_position": 4
+              }
+            },
+            {
+              "unversionedId": "pinning-services-api",
+              "id": "pinning-services-api",
+              "isDocsHomePage": false,
+              "title": "",
+              "description": "Decoo offers support for the IPFS Pinning Services API Spec.",
+              "source": "@site/docs/pinning-services-api.md",
+              "sourceDirName": ".",
+              "slug": "/pinning-services-api",
+              "permalink": "/pinning-services-api",
+              "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/docs/pinning-services-api.md",
+              "version": "current",
+              "frontMatter": {
+                "title": ""
               },
-              "sidebar": "tutorialSidebar",
+              "sidebar": "mySidebar",
               "previous": {
-                "title": "Tutorial Intro",
-                "permalink": "/"
+                "title": "",
+                "permalink": "/pinning/pin-list"
+              }
+            },
+            {
+              "unversionedId": "pinning/pin-by-hash",
+              "id": "pinning/pin-by-hash",
+              "isDocsHomePage": false,
+              "title": "",
+              "description": "Endpoint",
+              "source": "@site/docs/pinning/pin-by-hash.md",
+              "sourceDirName": "pinning",
+              "slug": "/pinning/pin-by-hash",
+              "permalink": "/pinning/pin-by-hash",
+              "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/docs/pinning/pin-by-hash.md",
+              "version": "current",
+              "frontMatter": {
+                "title": ""
+              },
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "",
+                "permalink": "/pinning/pin-file"
+              },
+              "next": {
+                "title": "",
+                "permalink": "/pinning/pin-jobs"
+              }
+            },
+            {
+              "unversionedId": "pinning/pin-file",
+              "id": "pinning/pin-file",
+              "isDocsHomePage": false,
+              "title": "",
+              "description": "Endpoint",
+              "source": "@site/docs/pinning/pin-file.md",
+              "sourceDirName": "pinning",
+              "slug": "/pinning/pin-file",
+              "permalink": "/pinning/pin-file",
+              "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/docs/pinning/pin-file.md",
+              "version": "current",
+              "frontMatter": {
+                "title": ""
+              },
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "",
+                "permalink": "/general/faq"
+              },
+              "next": {
+                "title": "",
+                "permalink": "/pinning/pin-by-hash"
+              }
+            },
+            {
+              "unversionedId": "pinning/pin-jobs",
+              "id": "pinning/pin-jobs",
+              "isDocsHomePage": false,
+              "title": "",
+              "description": "Endpoint",
+              "source": "@site/docs/pinning/pin-jobs.md",
+              "sourceDirName": "pinning",
+              "slug": "/pinning/pin-jobs",
+              "permalink": "/pinning/pin-jobs",
+              "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/docs/pinning/pin-jobs.md",
+              "version": "current",
+              "frontMatter": {
+                "title": ""
+              },
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "",
+                "permalink": "/pinning/pin-by-hash"
+              },
+              "next": {
+                "title": "",
+                "permalink": "/pinning/pin-list"
+              }
+            },
+            {
+              "unversionedId": "pinning/pin-list",
+              "id": "pinning/pin-list",
+              "isDocsHomePage": false,
+              "title": "",
+              "description": "Endpoint",
+              "source": "@site/docs/pinning/pin-list.md",
+              "sourceDirName": "pinning",
+              "slug": "/pinning/pin-list",
+              "permalink": "/pinning/pin-list",
+              "editUrl": "https://github.com/decooio/decoo-wiki/edit/main/docs/pinning/pin-list.md",
+              "version": "current",
+              "frontMatter": {
+                "title": ""
+              },
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "",
+                "permalink": "/pinning/pin-jobs"
+              },
+              "next": {
+                "title": "",
+                "permalink": "/pinning-services-api"
               }
             }
           ]
