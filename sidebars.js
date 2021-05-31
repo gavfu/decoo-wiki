@@ -83,7 +83,7 @@ module.exports = {
     {
       type: 'doc',
       id: 'pinning-services-api',
-      label: 'Pinning Services API'
+      label: 'IPFS Remote Pinning Services API'
     }
 
   ]
