@@ -8,7 +8,10 @@ https://api.decoo.io/pinning/pinByHash
 ## Description
 Asynchronously pin an IPFS content to Decoo cloud by its content identifier. Each API call will generate a *pin job*, which will be picked and processed by a periodically running job. You can query the status of the job using [pinJobs](pinning/pin-jobs.md) API.
 
-Please not that, in order for the job to be successfully processed, the content for the hash you provide must already be pinned by another node on the IPFS network.
+
+:::note
+In order for the job to be successfully processed, the content for the hash you provide must already be pinned by another node on the IPFS network.
+:::
 
 ## Type
 POST
