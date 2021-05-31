@@ -70,6 +70,11 @@ module.exports = {
         },
         {
           type: 'doc',
+          id: 'pinning/pin-from-s3',
+          label: 'pinFromS3'
+        },
+        {
+          type: 'doc',
           id: 'pinning/pin-jobs',
           label: 'pinJobs'
         },

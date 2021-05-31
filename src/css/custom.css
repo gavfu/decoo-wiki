@@ -33,6 +33,8 @@
 
   /* container */
   --ifm-spacing-horizontal: 78px;
+
+  --ifm-alert-padding-horizontal: calc(var(--ifm-spacing-horizontal) * 0.35);
 }
 
 .docusaurus-highlight-code-line {
