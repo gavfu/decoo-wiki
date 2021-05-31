@@ -38,12 +38,12 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'general/getting-started',
+          id: 'general/gettingStarted',
           label: 'Getting Started'
         },
         {
           type: 'doc',
-          id: 'general/api-keys',
+          id: 'general/apiKeys',
           label: 'API Keys'
         },
         {
@@ -60,34 +60,34 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'pinning/pin-file',
+          id: 'pinning/pinFile',
           label: 'pinFile'
         },
         {
           type: 'doc',
-          id: 'pinning/pin-by-hash',
+          id: 'pinning/pinByHash',
           label: 'pinByHash'
         },
         {
           type: 'doc',
-          id: 'pinning/pin-from-s3',
+          id: 'pinning/pinFromS3',
           label: 'pinFromS3'
         },
         {
           type: 'doc',
-          id: 'pinning/pin-jobs',
+          id: 'pinning/pinJobs',
           label: 'pinJobs'
         },
         {
           type: 'doc',
-          id: 'pinning/pin-list',
+          id: 'pinning/pinList',
           label: 'pinList'
         },
       ]
     },
     {
       type: 'doc',
-      id: 'pinning-services-api',
+      id: 'pinningServicesApi',
       label: 'IPFS Remote Pinning Services API'
     }
 
