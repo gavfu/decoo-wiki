@@ -41,10 +41,20 @@ module.exports = {
           id: 'general/gettingStarted',
           label: 'Getting Started'
         },
+        // {
+        //   type: 'doc',
+        //   id: 'general/apiKeys',
+        //   label: 'API Keys'
+        // },
         {
           type: 'doc',
-          id: 'general/apiKeys',
-          label: 'API Keys'
+          id: 'general/pinningWithApi',
+          label: 'Pinning with API'
+        },
+        {
+          type: 'doc',
+          id: 'general/retrievingFiles',
+          label: 'Retrieving Files'
         },
         {
           type: 'doc',
@@ -68,11 +78,11 @@ module.exports = {
           id: 'pinning/pinByHash',
           label: 'pinByHash'
         },
-        {
-          type: 'doc',
-          id: 'pinning/pinFromS3',
-          label: 'pinFromS3'
-        },
+        // {
+        //   type: 'doc',
+        //   id: 'pinning/pinFromS3',
+        //   label: 'pinFromS3'
+        // },
         {
           type: 'doc',
           id: 'pinning/pinJobs',

@@ -27,12 +27,6 @@ The first key in the form-data body should be named "file", and the value should
 
 Developer can pass some additional options to control how the content is pinned to Decoo.
 
-- *cidVersion*: The IPFS CID version used when creating a hash for the content. Valid options are:
-  - *"0"*: CID v0
-  - *"1"*: CID v1
-
-  The default value is *"0"*.
-
 - *wrapWithDirectory*: Whether to wrap the content inside of a directory when adding to IPFS. This allows users to retrieve content via a filename instead of a hash. Valid options are:
   - *true*
   - *false*
@@ -42,7 +36,6 @@ Developer can pass some additional options to control how the content is pinned 
 An example *decooOptions* is like below:
 ```json
 "decooOptions": {
-  "cidVersion": "0",
   "wrapWithDirectory": true
 }
 ```
@@ -81,5 +74,5 @@ curl -X POST "https://api.decoo.io/pinning/pinFile" \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: multipart/form-data" \
   -F file=<YOUR_FILE>
-  --data '{"decooOptions": {"cidVersion": 0, "wrapWithDirectory": true}, "decooMetadata": {"name": "My File"}}'
+  --data '{"decooOptions": {"wrapWithDirectory": true}, "decooMetadata": {"name": "My File"}}'
 ```
