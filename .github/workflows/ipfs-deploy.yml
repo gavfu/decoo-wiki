@@ -1,4 +1,4 @@
-name: Prod Deploy
+name: Ipfs Deploy
 on:
   workflow_dispatch:
 
@@ -33,7 +33,7 @@ jobs:
         uses: XueMoMo/actions-coudflare-dns@v1.0.1
         id: dnslink
         with:
-          name: "wiki.decoo.io"
+          name: "wiki-ipfs.decoo.io"
           cid: ${{ steps.upload.outputs.hash }}
           token: ${{ secrets.CLOUDFLARE_TOKEN }}
           zone: ${{ secrets.CLOUDFLARE_ZONE_ID }}
