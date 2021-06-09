@@ -11,9 +11,9 @@ This is a brief tutorial on how to use API to pin your files to IPFS.
 
 There two catogories of APIs that can support IPFS Pinning and other pinning-related activities via HTTP requests.
 
-One category is **Decoo API**, which is offered specifically by Decoo, as a pinning service provider.
+One category is **Decoo Pinning API**, which is offered specifically by Decoo, as a pinning service provider.
 
-The other category is **IPFS Pinning Service API**, which is a standardized API by IPFS that helps developers integrite third-party's pinning service via IPFS's native remote pin. Decoo will realize full support to [IPFS Pinning Service API Spec](https://ipfs.github.io/pinning-services-api-spec/) very soon.
+The other category is **IPFS Pinning Service API**, which is a standardized API by IPFS that helps developers integrite third-party's pinning service via IPFS's native remote pin. Decoo already provided an implementation of this [IPFS Pinning Services API](pinning-services-api.mdx).
 
 ## Decoo API
 
@@ -56,5 +56,13 @@ On success, it should return with 200 and the following body:
 ```json
 {
   "Success": true
+}
+```
+
+If token is invalid, it should return following body:
+```json
+{
+  "Code": 401,
+  "Message": "Invalid token"
 }
 ```
